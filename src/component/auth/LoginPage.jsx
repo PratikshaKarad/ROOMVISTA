@@ -66,9 +66,9 @@ function LoginPage() {
                 </div>
                 <button type="submit">Login</button>
             </form>
-
-            <p className="register-link">
-                Don't have an account? <a href="/register">Register</a>
+            <p style={{color:"blue", fontSize:"15px"}}>Forget password</p>
+            <p className="register-link" >
+                Don't have an account? <a href="/register" style={{color:"blue"}}>Register</a>
             </p>
         </div>
         </div>

@@ -93,7 +93,7 @@ function RegisterPage() {
                 <button type="submit">Register</button>
             </form>
             <p className="register-link">
-                Already have an account? <a href="/login">Login</a>
+                Already have an account? <a href="/login" style={{color:"blue"}}>Login</a>
             </p>
         </div>
         </div>

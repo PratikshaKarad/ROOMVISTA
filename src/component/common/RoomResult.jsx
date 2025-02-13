@@ -14,8 +14,8 @@ const RoomResult = ({ roomSearchResults }) => {
                             <img className='room-list-item-image' src={room.roomPhotoUrl} alt={room.roomType} />
                             <div className="room-details">
                                 <h3>{room.roomType}</h3>
-                                <p>Price: ${room.roomPrice} / night</p>
-                                <p>Description: {room.roomDescription}</p>
+                                <p style={{color:"#fff"}}>Price:₹{room.roomPrice} / night</p>
+                                <p style={{color:"#fff"}}>Description: {room.roomDescription}</p>
                             </div>
 
                             <div className='book-now-div'>

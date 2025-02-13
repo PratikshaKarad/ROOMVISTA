@@ -15,13 +15,14 @@ const RoomSearch = ({ handleSearchResult }) => {
         const fetchRoomTypes = async () => {
             try {
                 const types = await ApiService.getRoomTypes();
-
+                setRoomTypes(types);  // ✅ Updating the state
             } catch (err) {
                 console.log(err.message);
             }
         };
         fetchRoomTypes();
     }, []);
+    
     const showError = (message, timeOut = 5000) => {
         setError(message)
         setTimeout(() => {
