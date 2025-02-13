@@ -38,7 +38,8 @@ const FindBookingPage = () => {
         }}>
             <h2 style={{textAlign:'center',
                 fontSize:"60px",
-                top:"50%"
+                top:"50%",
+                color:"#0678c4",
             }}>Find Booking</h2>
             <div className="search-container">
                 <input
@@ -48,6 +49,8 @@ const FindBookingPage = () => {
                     value={confirmationCode}
                     onChange={(e) => setConfirmationCode(e.target.value)}
                 />
+                <br/>
+                <br/>
                 <button onClick={handleSearch}>Find</button>
             </div>
             {error && <p style={{ color: 'red' }}>{error}</p>}
