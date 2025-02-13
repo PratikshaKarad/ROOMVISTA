@@ -15,7 +15,7 @@ const RoomSearch = ({ handleSearchResult }) => {
         const fetchRoomTypes = async () => {
             try {
                 const types = await ApiService.getRoomTypes();
-
+                setRoomTypes(types);  // ✅ Updating the state
             } catch (err) {
                 console.log(err.message);
             }
@@ -81,9 +81,9 @@ const RoomSearch = ({ handleSearchResult }) => {
                         <option disabled value="">
                             Select Room Type
                         </option>
-                        {roomTypes.map((roomType) => (
-                            <option key={roomType} value={roomType}>
-                                {roomType}
+                        {roomTypes.map((type) => (
+                            <option key={type} value={type}>
+                                {type}
                             </option>
                         ))}
                     </select>
