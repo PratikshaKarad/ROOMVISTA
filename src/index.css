@@ -67,10 +67,12 @@
 .auth-container {
   max-width: 400px;
   padding: 20px;
-  border: 0.5px solid #ccc;
+  /* border: 0.5px solid #ccc; */
   border-radius: 5px;
-  background-color: #fff;
+  backdrop-filter: blur(10px);
+  background-color:transparent;
   margin: 20px auto 50px auto;
+  color: #fff;
 }
 
 .auth-container h2 {
@@ -82,6 +84,7 @@
 .register-link {
   margin-top: 20px;
   font-size: 13px;
+  color: #fff;
 }
 
 .register-link a {
@@ -96,6 +99,7 @@
 .form-group label {
   display: block;
   font-weight: bold;
+  color: #0178a6;
 }
 
 /**LOGIN CSS END HERE*/
@@ -254,17 +258,20 @@ button[type="submit"]:hover {
 
 .search-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
+  flex-direction: column;
+  /* flex-wrap: wrap;
+  justify-content: left; */
   align-items: center;
   margin-bottom: 10px;
   padding: 20px;
-  margin-left: 45px;
+  /* margin-left: 45px; */
 }
 
 .search-field {
-  flex: 0 0 calc(25% - 10px);
-  margin: 10px;
+  width: 100%;
+  max-width: 300px;
+  /* flex: 0 0 calc(25% - 10px); */
+  margin: 10px auto;
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -278,7 +285,9 @@ button[type="submit"]:hover {
   font-weight: bold;
   color: #666;
 }
-
+.search-field:not(:last-child) {
+  margin-bottom: 15px; /* Space between fields */
+}
 .search-field input,
 .search-field select {
   width: 100%;
@@ -289,7 +298,9 @@ button[type="submit"]:hover {
 }
 
 .home-search-button {
-  margin-left: 10px;
+  
+  display: block;
+  margin-top: 20px;
   padding: 15px 20px;
   background-color: #007f86;
   font-weight: 600;
@@ -298,7 +309,7 @@ button[type="submit"]:hover {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .home-search-button:hover {
@@ -433,47 +444,97 @@ button[type="submit"]:hover {
 
 /*ALL ROOMS PAGE STYLING START*/
 
+/* Center everything properly */
 .all-rooms {
-  margin: 50px 0px 90px 0px;
-}
-
-.all-rooms h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+/* Heading */
+.all-rooms h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #007f86;
   margin-bottom: 20px;
-  color: #007f86;
 }
 
+/* Align filter section properly */
 .all-room-filter-div {
-  margin-left: 5rem;
-}
-
-.all-room-filter-div label {
-  color: #007f86;
-}
-
-.filter-select-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
   width: 100%;
-  margin: 0px 0px 0px 4rem;
+  max-width: 600px;
+  padding: 15px;
+  
 }
-
-.add-room-button {
-  float: right;
-  margin-right: 70px;
-  font-weight: 600;
-}
-
-.all-room-filter-div label {
-  font-weight: 800;
+.all-room-filter-div label{
+  color: #fff;
   font-size: 20px;
 }
 
+/* Styling for input fields, including react-datepicker-wrapper */
+.react-datepicker-wrapper,
+.all-room-filter-div input,
 .all-room-filter-div select {
-  width: auto;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.6); /* Light white border */
+  background: rgba(255, 255, 255, 0.2); /* Light translucent background */
+  color: #fff; /* Ensure text is readable */
   font-size: 16px;
 }
+
+/* Adjust input focus */
+.react-datepicker-wrapper input:focus,
+.all-room-filter-div input:focus,
+.all-room-filter-div select:focus {
+  outline: none;
+  border-color: #007f86;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Fix the alignment of the Room Type dropdown */
+.all-room-filter-div select {
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+}
+
+/* Adjust button spacing */
+.add-room-button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #13d2dc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-room-button:hover {
+  background-color: #005f63;
+}
+
+
+.search-field{
+  background: transparent;
+}
+
+.search-field label{
+  color: #ffffff;
+}
+
+
 
 /*ALL ROOMS PAGE STYLING ENDS*/
 
@@ -684,7 +745,7 @@ button[type="submit"]:hover {
 button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #007f86;
+  background-color: #005086;
   color: #fff;
   border: none;
   border-radius: 4px;
