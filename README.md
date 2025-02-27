@@ -1,10 +1,21 @@
 # ROOMVISTA
 
 ## Online Hotel Booking System
-![Project Screenshot](https://example.com/image.png)
+![Project Screenshot](https://github.com/PratikshaKarad/ROOMVISTA/blob/30b608d07497857299fcfc402b8c5aa40e74e32b/home.png)
+
+![Project Screenshot](https://github.com/PratikshaKarad/ROOMVISTA/blob/30b608d07497857299fcfc402b8c5aa40e74e32b/homescreen.png)
+
+![Project Screenshot](https://github.com/PratikshaKarad/ROOMVISTA/blob/30b608d07497857299fcfc402b8c5aa40e74e32b/Room.png)
+
+![Project Screenshot](https://github.com/PratikshaKarad/ROOMVISTA/blob/30b608d07497857299fcfc402b8c5aa40e74e32b/Login.png)
+
+![Project Screenshot](https://github.com/PratikshaKarad/ROOMVISTA/blob/30b608d07497857299fcfc402b8c5aa40e74e32b/Registration.png)
+
+![Project Screenshot](https://github.com/PratikshaKarad/ROOMVISTA/blob/30b608d07497857299fcfc402b8c5aa40e74e32b/MyBooking.png)
 ## 1. Brief Description of the Project
 
 The Online Hotel Booking System is a web-based application that allows users to search for available hotel rooms, book accommodations, and manage their reservations efficiently. The system includes user authentication, room availability checks, secure payment processing, and an admin panel for managing bookings and room listings. The backend is built using Spring Boot with JWT authentication and AWS S3 integration, while the frontend is developed using React.js for a seamless user experience.
+
 
 ## 2. Software Requirements for the Project
 
@@ -80,4 +91,4 @@ This is a full-stack Hotel Booking System built using React.js for the frontend 
 
 - Admin panel with protected routes
 
-
+![Project Screenshot](https://github.com/PratikshaKarad/ROOMVISTA/blob/30b608d07497857299fcfc402b8c5aa40e74e32b/frontpage.png)
