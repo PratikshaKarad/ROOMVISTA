@@ -6,7 +6,7 @@
 
 The Online Hotel Booking System is a web-based application that allows users to search for available hotel rooms, book accommodations, and manage their reservations efficiently. The system includes user authentication, room availability checks, secure payment processing, and an admin panel for managing bookings and room listings. The backend is built using Spring Boot with JWT authentication and AWS S3 integration, while the frontend is developed using React.js for a seamless user experience.
 
-## 2. Software Requirements for the Project (Tentative)
+## 2. Software Requirements for the Project
 
 - Backend: Java (Spring Boot), Spring Security, JWT, Hibernate, AWS SDK
 
@@ -18,7 +18,7 @@ The Online Hotel Booking System is a web-based application that allows users to 
 
 - Development Tools: VS Code, Eclips, Postman, Git
 
-## 3. Hardware Requirements for the Project (Tentative)
+## 3. Hardware Requirements for the Project
  Processo: Intel i5 or higher
 
 - RAM: 8GB or more
