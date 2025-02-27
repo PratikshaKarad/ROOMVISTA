@@ -35,7 +35,7 @@ This is a full-stack Hotel Booking System built using React.js for the frontend 
 
 5.Live Demo
 
-[![Watch the full project on YouTube:](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://youtu.be/MXawNad_4Hk)
+[![Watch the full project on YouTube:]](https://youtu.be/MXawNad_4Hk)
 
 
 6.Tech Stack
